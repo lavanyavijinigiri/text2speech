@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+.hero{
+    min-width: 100vh;
+    min-height: 100vh;
+    background: linear-gradient(45deg,rgb(242, 0, 255),white);
+    display: flex;
+    align-items: center;/*horizontal center(UP)*/
+    justify-content: center;/*vertical centre(down)*/
+    flex-direction: column;/*for keeping the text area below the "TEXT TO SPEECH..."*/
+    color: purple;
+}
+.hero h1{
+    font-size: 45px;
+    font-weight: 500;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    
+}
+.hero h1 span{
+    color: brown;
+}
+textarea{
+    width: 600px;
+    height: 250px;
+    background: rgb(189, 136, 239);
+    color: white;
+    font-size: 15px;
+    border: 0;
+    outline: 0;
+    padding: 20px;
+    border-radius: 10px;
+    resize: none;/removes the resizeable area in the page/
+    margin-bottom: 30px;
+}
+textarea::placeholder{
+    color: white;
+    font-size: 16px;
+}
+.row {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.row button{
+    background: rgb(72, 13, 175);
+    color: white;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 35px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.row button img{
+    width: 14px;
+    margin-right: 10px;
+}
+.row select{
+    flex: 1;
+    color: white;
+    background: rgb(189, 136, 239);
+    padding: 0 20px;
+    height: 40px;
+    outline: 0;
+    border: 0;
+    border-radius: 35px;
+    appearance: none;
+    background-image: url(images/dropdown.jpg);
+    background-repeat: no-repeat;
+    background-size: 15px;/size of dropdown symbol/
+    background-position: calc(100% - 20px);
+}
+#refresh img{
+    width: 20px;
+}
